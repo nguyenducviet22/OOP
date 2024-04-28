@@ -1,4 +1,4 @@
-package vietnd.mai;
+package vietnd.main;
 
 import vietnd.util.JavaTools;
 
