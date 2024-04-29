@@ -10,9 +10,6 @@ package data;
  * @author NGUYEN DUC VIET
  */
 public class Square extends Rectangle {
-//    private String owner;
-//    private String color;
-//    private double side;
 
     public Square(String owner, String color, double side) {
         super(owner, color, side, side);
