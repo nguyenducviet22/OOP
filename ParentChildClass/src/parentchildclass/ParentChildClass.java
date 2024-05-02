@@ -29,7 +29,12 @@ public class ParentChildClass {
         ch1.sayHi();
 //        Declare Parent Obj and create Child Obj
         Parent ch2 = new Child("A Building", 100000, "Vinfast");
+//        ch2 trỏ lưng chừng
 //        ch2.sayHi();do not have sayHi() method in Parent Class
+        Child tmp = (Child)ch2;
+//        tmp trỏ dáy new, ram
+        tmp.sayHi();
+        ((Child)ch2).sayHi();
     }
     
 }
