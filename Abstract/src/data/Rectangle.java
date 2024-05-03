@@ -1,10 +1,8 @@
 package data;
 
-import pkgabstract.Shape;
-
 public class Rectangle extends Shape {
 
-    private double a, b;
+    protected double a, b;
 
     public Rectangle(String name, String color, double a, double b) {
         super(name, color);

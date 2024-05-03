@@ -1,7 +1,5 @@
 package data;
 
-import pkgabstract.Shape;
-
 public class Round extends Shape{
     public static final double PI = 3.14;
     private double radius;
