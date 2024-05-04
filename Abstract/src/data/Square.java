@@ -17,7 +17,7 @@ public class Square extends Rectangle {
     
     @Override
     public void showInfo(){
-        System.out.printf("|Square    |%-10s|%-10s|%4.1f|%7.2f|%7.2f|\n", 
+        System.out.printf("|Square    |%-10s|%-10s|%4.1f| -- | -- |%7.2f|%7.2f|\n", 
                 name, color, a, getArea(), getPerimiter());
     }
 }
