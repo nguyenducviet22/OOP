@@ -43,7 +43,7 @@ public class Rectangle extends Shape {
 
     @Override
     public void showInfo() {
-        System.out.printf("|Rectangle |%-10s|%-10s|%4.1f|%4.1f|%7.2f|%7.2f|\n", 
+        System.out.printf("|Rectangle |%-10s|%-10s|%4.1f|%4.1f| -- |%7.2f|%7.2f|\n", 
                 name, color, a, b, getArea(), getPerimiter());
     }
 

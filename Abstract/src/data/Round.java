@@ -34,7 +34,7 @@ public class Round extends Shape{
 
     @Override
     public void showInfo() {
-        System.out.printf("|Round     |%-10s|%-10s|%4.1f|%7.2f|%7.2f|\n", 
+        System.out.printf("|Round     |%-10s|%-10s|%4.1f| -- | -- |%7.2f|%7.2f|\n", 
                 name, color, radius, getArea(), getPerimiter());
     }
     
