@@ -10,6 +10,7 @@ package data;
  * @author NGUYEN DUC VIET
  */
 public abstract class Pet {
+
     protected String name;
     protected int yob;
     protected double weight;
@@ -48,7 +49,8 @@ public abstract class Pet {
     public String toString() {
         return "Pet{" + "name=" + name + ", yob=" + yob + ", weight=" + weight + '}';
     }
-    
+
     public abstract double run();
+
     public abstract void showRecord();
 }
