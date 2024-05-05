@@ -1,26 +1,36 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package shapes;
 
 import data.*;
 
-/**
- *
- * @author NGUYEN DUC VIET
- */
 public class Shapes {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        sortShapes();
+//        sortShapes();
+        createAnonymousClass();
     }
-    
-    public static void sortShapes(){
+
+    public static void createAnonymousClass() {
+        Shape uniqueSh = new Shape("Bro", "Orange") {
+            @Override
+            public double getArea() {
+                return 50;
+            }
+
+            @Override
+            public double getPerimetive() {
+                return 30;
+            }
+
+            @Override
+            public void showInfo() {
+                System.out.printf("|%-10s|%-10s|%-10s| -- | -- |%7.2f|%7.2f|\n",
+                        "Unique", name, color, getArea(), getPerimetive());
+            }
+        };
+        uniqueSh.showInfo();
+    }
+
+    public static void sortShapes() {
         Rectangle rec = new Rectangle("Dad", "Black", 2, 3);
         Shape recSh = new Rectangle("Dad", "Red", 3, 4);
         Square sq = new Square("Mom", "Blue", 3);
@@ -28,9 +38,9 @@ public class Shapes {
         Shape sqSh = new Square("Mom", "Green", 4);
         Round r = new Round("Me", "Purple", 2);
         Shape rSh = new Round("Me", "Red", 5);
-        
+
         Shape shape[] = new Shape[]{rec, recSh, sq, sqRec, sqSh, r, rSh};
-        for (int i = 0; i < shape.length -1; i++) {
+        for (int i = 0; i < shape.length - 1; i++) {
             for (int j = i + 1; j < shape.length; j++) {
                 if (shape[i].getArea() > shape[j].getArea()) {
                     Shape tem = shape[i];
