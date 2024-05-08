@@ -60,7 +60,7 @@ public class Student {
     }
     
     public void showInfo(){
-        System.out.printf("|%8s|%-25s|%4d|%4.1f|\n", 
+        System.out.printf("|%6s|%-10s|%4d|%4.1f|\n", 
                 id, name, yob, gpa);
     }
     

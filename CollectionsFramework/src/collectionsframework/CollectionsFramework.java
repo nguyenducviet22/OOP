@@ -36,6 +36,19 @@ public class CollectionsFramework {
         
         System.out.println("The list has " + arrList.size() + " objs");
         
+        System.out.println("Print each student: ");
+        Student stu = arrList.get(0);
+        stu.showInfo();
+        arrList.get(1).showInfo();
+        
+        System.out.println("Print all students: ");
+//        for (Student student : arrList) {
+//            student.showInfo();
+//        }
+        for (int i = 0; i < arrList.size(); i++) {
+            arrList.get(i).showInfo();
+        }
+        
     }
     
 }
