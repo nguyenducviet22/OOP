@@ -6,6 +6,7 @@
 package advancedcollectionsframework;
 
 import data.Cabinet;
+import data.Student;
 
 /**
  *
@@ -18,21 +19,17 @@ public class AdvancedCollectionsFramework {
      */
     public static void main(String[] args) {
         Cabinet se = new Cabinet();
-        Cabinet ai = new Cabinet();
         
         System.out.println("Enter SE: ");
         se.addStudent();
-        
-        System.out.println("Enter AI: ");
-        ai.addStudent();
-//        ai.addStudent();
+        se.addStudent();
         
         System.out.println("SE students: ");
         se.printStudentList();
         
-        System.out.println("AI students: ");
-        ai.printStudentList();
+//        se.searchStudent();
         
+        se.updateStudent();
     }
     
 }
