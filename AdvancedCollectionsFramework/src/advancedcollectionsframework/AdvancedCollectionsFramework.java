@@ -6,7 +6,7 @@
 package advancedcollectionsframework;
 
 import data.Cabinet;
-import data.Student;
+import data.CabinetTest;
 
 /**
  *
@@ -18,7 +18,8 @@ public class AdvancedCollectionsFramework {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Cabinet se = new Cabinet();
+//        Cabinet se = new Cabinet();
+        CabinetTest se = new CabinetTest();
         
         System.out.println("Enter SE: ");
         se.addStudent();
