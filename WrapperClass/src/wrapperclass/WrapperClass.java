@@ -16,8 +16,33 @@ public class WrapperClass {
      */
     public static void main(String[] args) {
 //        createIntegerObj();
-        createPoiter();
+//        createPoiter();
+        createPool();
     }
+    
+    public static void createPool() {
+        Integer n1 = 2004;
+        Integer n2 = 2004;
+        Integer n3 = new Integer(2004);
+        
+        if (n1 == n2) {
+            System.out.println("n1 equals n2");
+        } else {
+            System.out.println("n1 does not equal n2");
+        }
+        //new ngầm [-128, 127] thì vùng new Integer() là vùng new xài chung trong obj
+        
+        
+        Integer n4 = 100;
+        Integer n5 = 100;
+        Integer n6 = new Integer(100);
+        
+        if (n4 == n5) {
+            System.out.println("n4 equals n5");
+        } else {
+            System.out.println("n4 does not equal n5");
+        }
+    }   
     
     public static void createPoiter() {
         Integer n1 = 2004;
